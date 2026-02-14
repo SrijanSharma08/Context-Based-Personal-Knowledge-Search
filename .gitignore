@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+
+# Virtual environment
+.venv/
+venv/
+
+# Data directories (generated)
+backend/data/chroma_db/
+backend/data/uploads/
+
+# OS / Editor
+.DS_Store
+.idea/
+.vscode/

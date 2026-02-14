@@ -1,0 +1,177 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #111827;
+  background-color: #f3f4f6;
+}
+
+.app-root {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 280px;
+  padding: 16px;
+  background-color: #111827;
+  color: #f9fafb;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.sidebar h2 {
+  margin: 0 0 8px;
+  font-size: 1.1rem;
+}
+
+.section {
+  border-radius: 8px;
+  padding: 8px 10px;
+  background-color: #1f2937;
+}
+
+.label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+  display: block;
+}
+
+.label-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.small {
+  font-size: 0.75rem;
+  opacity: 0.8;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+button {
+  border-radius: 6px;
+  border: none;
+  padding: 8px 10px;
+  background-color: #3b82f6;
+  color: white;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.status-list {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0 0;
+  font-size: 0.85rem;
+}
+
+.error {
+  margin-top: 6px;
+  padding: 6px 8px;
+  border-radius: 6px;
+  background-color: #b91c1c;
+  color: #fee2e2;
+  font-size: 0.8rem;
+}
+
+.chat {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  gap: 8px;
+}
+
+.chat-messages {
+  flex: 1;
+  overflow-y: auto;
+  padding-right: 4px;
+}
+
+.placeholder {
+  margin-top: 16px;
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+.message {
+  max-width: 80%;
+  padding: 8px 10px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  background-color: #e5e7eb;
+}
+
+.message.user {
+  margin-left: auto;
+  background-color: #3b82f6;
+  color: #eff6ff;
+}
+
+.message.assistant {
+  margin-right: auto;
+}
+
+.message-role {
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+  opacity: 0.8;
+}
+
+.message-content {
+  font-size: 0.9rem;
+}
+
+.message-sources {
+  margin-top: 8px;
+  font-size: 0.75rem;
+  color: #374151;
+}
+
+.message-sources ul {
+  margin: 4px 0 0;
+  padding-left: 16px;
+}
+
+.chat-input {
+  display: flex;
+  gap: 8px;
+  padding-top: 8px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.chat-input input {
+  flex: 1;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  padding: 8px 10px;
+  font-size: 0.9rem;
+}
+
+.chat-input button {
+  flex-shrink: 0;
+}
+
+.global-error {
+  align-self: flex-start;
+}
+

@@ -1,0 +1,15 @@
+fastapi
+uvicorn[standard]
+langchain
+langchain-community
+sentence-transformers
+chromadb
+torch
+transformers
+pytesseract
+pillow
+pypdf
+python-multipart
+numpy
+pydantic
+requests
